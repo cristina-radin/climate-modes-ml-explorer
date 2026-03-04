@@ -48,29 +48,36 @@ The application runs fully client-side and does not require a backend.
 
 ## 📂 Project Structure
 
+```
 climate-modes-ml-explorer/
 │
-├── index.html
-├── css/
-├── js/
-├── data/
-├── assets/
-└── README.md
+├── index.html        # Main application entry point
+├── About.html        # Project description page
+├── Help.html         # User guide
+├── css/              # Styling files
+├── js/               # Core interactivity logic
+├── data/             # Datasets used in the study
+├── assets/           # Images and static assets
+├── static/           # Additional static resources
+├── www/              # Layout components and media
+├── README.md
+└── LICENSE
+```
 
 
-🌍 Deployment
+## 🌍 Deployment
 
-The tool is deployed using GitHub Pages and can be accessed directly via the link: https://cristina-radin.github.io/climate-modes-ml-explorer/
+The tool is deployed using GitHub Pages and can be accessed directly via the link above.
 
 
-🎯 Purpose
+## 🎯 Purpose
 
 Scientific results should not remain static figures in a PDF.
 
 This tool aims to make model outputs accessible, explorable and reusable, encouraging transparency and scientific communication.
 
 
-📬 Contact
+## 📬 Contact
 
 Cristina Radin
 University of Hamburg, Hamburg, Germany
