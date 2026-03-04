@@ -1,4 +1,3 @@
-```markdown
 ![Climate Modes ML Explorer](assets/screenshot.png)
 
 # 🌊 Climate Modes ML Explorer
