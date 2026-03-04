@@ -42,7 +42,7 @@ If you use this tool or its underlying methodology, please cite:
 - CSS3
 - JavaScript
 
-The application runs fully client-side and does not require a backend.
+The application runs entirely in the browser and does not require server-side processing.
 
 ---
 
@@ -80,6 +80,9 @@ This tool aims to make model outputs accessible, explorable and reusable, encour
 ## 📬 Contact
 
 Cristina Radin
+
 University of Hamburg, Hamburg, Germany
+
 cristina.radin@uni-hamburg.de 
+
 https://cristina-radin.github.io/cristinaradin/
