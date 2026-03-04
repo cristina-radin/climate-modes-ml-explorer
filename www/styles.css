@@ -1,0 +1,157 @@
+input[type="number"] {
+  max-width: 80%;
+}
+
+.outer {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Customize fonts */
+/* This changes all but the About this Site titles and the slider input "ticks"*/
+body, html, label, input, button, select{
+  font-family: 'Helvetica Neue', Helvetica;
+  font-size: 13px;
+  /*font-size: 1.6vh; Not used but it is interesting to use it in order to have 
+  a good visualisation in little screens*/
+}
+
+#nav{
+  font-size:13px;
+}
+
+/* Customize About this site Title fonts*/
+h1, h2, h3, h4 { 
+  font-size: 15px; 
+}
+
+#controls {
+  /* Appearance */
+  /*position: absolute;*/
+  background-color: white;
+  padding: 0px 20px 10px 20px;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 0.55;
+  zoom: 1.0;
+  transition: opacity 500ms 1s;
+}
+
+#controls:hover {
+  /* Fade in while hovering */
+  opacity: 0.9;
+  transition-delay: 0;
+}
+
+
+/*
+It migth be interesting to manage the visualisation on mobiles/tablets
+@media screen and (max-width: 200px) {
+  #controls{
+    width: 10px;
+    transition: opacity 5000ms 10s;
+  }
+}*/
+
+#logo {
+  /* Appearance */
+  background-color: transparent;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 0.95;
+  zoom: 0.9;
+  transition: opacity 500ms 1s;
+  left: 60;
+}
+
+#logo:hover {
+  /* Fade in while hovering */
+  opacity: 0.95;
+  transition-delay: 0;
+}
+
+/* Skill bars */
+.sb {
+  /*font-size: 13px;*/
+  font-size: 1em ;
+  font-family: 'Helvetica Neue', Helvetica;
+  font-weight: normal;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding: 0;
+  background-color: darkred;
+  border-style: solid;
+  border-width: 0px;
+  border-color: black;
+}
+
+.sb.blue {
+  background-color: #4040FF;
+  /*height:  13px;
+  line-height: 1px;*/
+
+}
+
+.sb.gray {
+  background-color: #505050;
+  /*height:  13px;
+  line-height: 1px;*/
+  
+}
+
+.sb.left {
+  float: right;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.sb.right {
+  float: left;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.sb.out.left {
+  float: right;
+  text-align: right;
+  padding-right: 2px;
+  color: black;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.sb.out.right {
+  float: left;
+  text-align: left;
+  padding-left: 2px;
+  color: black;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.mycol {
+  float: left;
+  width: 50%;
+  background-color: white;
+}
+
+.mycol.left {
+  float: left;
+}
+
+.mycol.right {
+  float: right;
+}
+
+
+/* Clear floats after the columns */
+.myrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}

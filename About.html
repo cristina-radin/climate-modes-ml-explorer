@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About this site</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Load Leaflet from CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@2.5.3/dist/esri-leaflet.js"
+        integrity="sha512-K0Vddb4QdnVOAuPJBHkgrua+/A9Moyv8AQEWi0xndQ+fqbRfAFd47z4A9u1AW/spLO0gEaiE1z98PK1gl5mC5Q=="
+        crossorigin=""></script>
+
+    <!-- Load plotly from CDN -->
+</head>
+<body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+            <a href="map_SL.html" class="navbar-brand">Climate Modes ML-Modeling Tool</a>
+            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>-->
+            <a href="About.html" class="navbar-brand">About this site</a>
+            <a href="Help.html" class="navbar-brand">Help</a>
+
+            <!--<div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                     #<li class="nav-item"> Estes linies
+                      #  <a class="nav-link" href="plots">Plots</a> estaven
+                    #</li> comentades
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa_bs.html">Sea Level ML-Modeling Tool</a>
+                        <a class="nav-link" href="About.html">About this site</a>
+                        <a class="nav-link" href="Help.html">Help</a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <div>
+       <h4 style="font-size: 2;">
+           This site is from MALOC project.
+        </h4>
+       <br>
+       <h4>
+           Background
+        </h4>
+       <p>
+            Principal Investigator: Veronica Nieves <br>
+            The methodology used to identify climate modes from Radin & Nieves (2024),
+            Earth Systems and Environment, <a href="https://link.springer.com/article/10.1007/s41748-024-00409-w" target="_blank" >DOI:10.1007/s41748-024-00409-w</a>
+       </p>  
+       <br>
+       <h4>
+        Data Availability
+        </h4>
+       <p>
+        Data supporting the findings of this study are available from the authors, C.R and V.N, upon reasonable request.
+    </p>
+        <br>
+        <h4>
+            Development
+        </h4>
+       <p>
+        Site Manager: Veronica Nieves
+        <br>
+        Based on the Global Sea Level ML-Modeling Tool, adapted by Cristina Radin.
+         </p>
+       <br>
+       <h4>
+        Contact
+    </h4>
+    
+    <p>
+        cristina.radin@uv.es
+        <br>
+        veronica.nieves@uv.es
+    </p>
+    <br>
+    <h4>
+         Last update
+     </h4>
+     <h6>
+         <p><time id="currentDate"></time></p>
+     </h6>
+ </div>
+
+ <script>
+     // Obtener la fecha actual
+     var today = new Date();
+     var dd = String(today.getDate()).padStart(2, '0');
+     var mm = String(today.getMonth() + 1).padStart(2, '0'); // Enero es 0!
+     var yyyy = today.getFullYear();
+ 
+     // Formatear la fecha en el formato deseado (por ejemplo, DD/MM/YYYY)
+     var formattedDate = dd + '/' + mm + '/' + yyyy;
+ 
+     // Actualizar el contenido del elemento time con la fecha formateada
+     document.getElementById('currentDate').textContent = formattedDate;
+ </script>
+
+</body>
+</html>

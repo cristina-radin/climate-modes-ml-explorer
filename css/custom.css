@@ -1,0 +1,397 @@
+body {
+    padding-top: 80px;
+}
+
+legend {
+    font-size: 12px;
+}
+
+label {
+    font-size: small;
+}
+
+
+
+p   {
+    font-size: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+h4  {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 15px;
+}
+
+#ai4 { 
+    position: relative;
+    float: right;
+    margin: 5px;
+}
+
+#ask { 
+    position: relative;
+    float: right;
+    margin: 5px;
+}
+
+.hidden3 {
+    display: none; /* Oculta los elementos */
+}
+
+.labelss {
+    font-size: 8px;
+    color: gray;
+    padding: 2px;
+    border: 2px ;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+.myrow {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.mycol {
+    flex: 1;
+}
+.sb {
+    height: 15px;
+}
+
+.left {
+    background-color: lightgray;
+}
+
+.right {
+    background-color: lightblue;
+}
+
+.sb.out.left {
+    text-align: left;
+}
+
+.sb.out.right {
+    text-align: right;
+}
+
+/* Skill bars */
+.sb {
+    font-size: 10px;
+    /*font-size: 1em ;*/
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: normal;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding: 0;
+    background-color: darkred;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    margin: 0;
+    padding: 0;
+}
+  
+.sb.blue {
+    background-color: #4040FF;
+    height:  18px;
+    /*line-height: 1px;*/
+  
+}
+  
+.sb.gray {
+    background-color: #505050;
+    height:  18px;
+    /*line-height: 1px;*/
+    
+}
+  
+.sb.left {
+    float: right;
+    text-align: left;
+    padding-left: 5px;
+}
+  
+.sb.right {
+    float: left;
+    text-align: right;
+    padding-right: 5px;
+}
+  
+.sb.out.left {
+    float: right;
+    text-align: right;
+    padding-right: 2px;
+    color: black;
+    border-color: transparent;
+    background-color: transparent;
+}
+  
+.sb.out.right {
+    float: left;
+    text-align: left;
+    padding-left: 2px;
+    color: black;
+    border-color: transparent;
+    background-color: transparent;
+}
+  
+.mycol {
+    float: left;
+    width: 20%;
+    background-color: white;
+}
+  
+.mycol.left {
+    float: left;
+}
+  
+.mycol.right {
+    float: right;
+}
+  
+/* Clear floats after the columns */
+.myrow:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+.myrow {
+    margin: 0;
+    padding: 0;
+}
+  
+#play, #pause {
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.40;
+}
+
+#sliderContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#play, #pause {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+#play img, #pause img {
+    width: 15px;
+    height: auto;
+}
+
+#pause {
+    display: none; /* Inicialmente oculto el botón de pausa */
+}
+
+#sliderWrapper {
+    width: 100%;
+    position: relative;
+}
+
+.text-small {
+   font-size: 9px; 
+}
+
+@media (max-width: 575.98px) {
+    .custom-select {
+        margin-right: 100px !important;
+    }
+    .navbar-brand{
+        font-size: 8px;
+        margin-right: 0px;
+    }
+    
+    #map {position: absolute; top: 48px; left: 0px; right: 0; bottom:0; width: 100%;z-index: 2;}
+    .custom-control-label{
+        font-size: 5px;
+    }
+    
+    .text-medium {
+        font-size: 8px;
+    }
+    .text-small {
+        font-size: 6px;
+    }
+
+    .custom-select {
+        font-size: 5px;
+    }
+
+    /*#box_blanca {width: 250px;}*/
+
+    #plotly {width: 240px;height: 190px;margin-right: 10px;}
+
+    .custom-select, .form-select {
+        font-size: 20px !important;
+    }
+    .custom-select option, .form-select option {
+        font-size: 20 !important;
+    }
+
+    
+    #ai4, #ask{
+        height: 15px;
+        width: 15px;
+        margin: 2px 2px 2px 2px;
+    }
+
+    /* Aplica flexbox al fieldset para alinear elementos en una sola línea */
+    fieldset.form-group.selectocean {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between; /* Ajusta según necesites más espacio entre los elementos */
+    }
+
+    /* Asegúrate de que los elementos dentro del fieldset tengan un tamaño adecuado */
+    fieldset.form-group.selectocean > * {
+        flex: 1; /* Permite que los elementos se ajusten uniformemente */
+        margin-right: 10px; /* Espacio entre elementos */
+    }
+
+    /* Elimina el margen del último elemento */
+    fieldset.form-group.selectocean > *:last-child {
+        margin-right: 0;
+    }
+
+    
+    fieldset {
+        margin-bottom: 5px;
+    }
+    .col-4{
+        position: absolute; top: 80px; left: 45px;  width: 580; height: auto; border-radius: 5px;  z-index: 100; background-color: white;  padding: 10px 20px 10px 20px;   cursor: move;
+        /* Fade out while not hovering */
+        opacity: 0.55;  zoom: 1.0; transition: opacity 100ms 1s;}
+    
+}
+
+/* Estilos para pantallas medianas (576px y superiores) */
+@media (min-width: 576px) {
+    .custom-select {
+        margin-right: 100px !important;
+    }
+}
+
+/* Estilos para pantallas grandes (768px y superiores) */
+@media (min-width: 768px) {
+    .custom-select {
+        margin-right: 50px !important;
+    }
+}
+
+/* Estilos para pantallas extra grandes (992px y superiores) */
+@media (min-width: 992px) {
+    .custom-select {
+        margin-right: 25px !important;
+    }
+}
+
+/* Estilos para pantallas ultra grandes (1200px y superiores) */
+@media (min-width: 1200px) {
+    .custom-select {
+        margin-right: 10px !important;
+    }
+}
+
+
+/* Estilo para el botón */
+#downloadButton {
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255); /* Cambiar fondo a azul */
+    border: none; /* Elimina el borde */
+    color: white; /* Cambiar el color del texto (si lo hubiera) */
+    padding: 8px 8px; /* Espaciado alrededor del botón */
+    cursor: pointer; /* Cambiar el cursor a mano */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para cambios de fondo */
+}
+
+#downloadButton:hover {
+    background-color: rgb(170, 176, 227); /* Cambiar fondo cuando pase el mouse */
+}
+
+/* Estilo para el icono dentro del botón */
+#downloadButton svg {
+    stroke: blue; /* Cambiar color de las líneas del SVG */
+    fill: none; /* Asegurarse de que el fondo del SVG no tenga color */
+}
+
+button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Asegúrate de centrar el contenido */
+    width: 32px;  /* Ajusta el tamaño del botón para que cubra el área del icono */
+    height: 32px; /* Asegúrate de que el área del botón cubra todo el SVG */
+}
+
+button svg {
+    width: 16px;  /* Ajusta el tamaño del SVG */
+    height: 16px; /* Ajusta el tamaño del SVG */
+}
+
+
+/* Solo para los botones de descarga */
+.download-btn {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;  /* Ajusta el tamaño para que todo el área sea clickeable */
+    height: 24px;
+    padding: 0; /* Evita espacio extra */
+}
+
+.download-btn svg {
+    pointer-events: none; /* Evita que el SVG interfiera con el clic */
+    width: 16px;
+    height: 16px;
+}
+
+
+.download-label {
+    min-width: 150px; /* Ajusta según lo que necesites */
+    display: inline-block;
+    text-align: left; /* Asegura que el texto esté alineado a la derecha */
+}
+/* Contenedor de los iconos */
+.bs-component a {
+    position: absolute;
+    right: 10px;
+}
+
+/* Si hay varios iconos, los separamos */
+.bs-component a:nth-child(2) {
+    top: -10px; /* Baja el segundo icono */
+    right: 30px;
+
+
+}
+
+.bs-component a:nth-child(1) {
+    top: -10px; /* Baja el segundo icono */
+    right: -5px; /* Baja el segundo icono */
+
+
+}
+fieldset.form-group {
+    margin-top: 5px; /* Ajusta este valor según sea necesario */
+
+}
